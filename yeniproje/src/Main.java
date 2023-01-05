@@ -97,7 +97,7 @@ public class Main {
         */
         /*HESAP MAKİNASI*/
 
-        int sayi1,sayi2,sonuc,islemTuru;
+        /*int sayi1,sayi2,sonuc,islemTuru;
 
 
         System.out.print("1. Sayısı giriniz : ");
@@ -127,5 +127,25 @@ public class Main {
         }
 
         System.out.print("İşlem sonucu : " + sonuc);
+         */
+
+        /*int i = 1;
+
+        while(i <= 5)
+        {
+            System.out.println("Değer : " + i);
+            i++;
+        }
+
+        for(int say=1;say<=10;say++)
+        {
+            System.out.println("Sayı : " + say);
+        }
+*/
+        int sum = 0;
+        for (int i = 0, j = 0; i < 5 || j < 5; ++i, j = i + 1) {
+            sum += i;
+        }
+        System.out.println(sum);
     }
 }

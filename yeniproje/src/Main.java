@@ -2,17 +2,15 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello \nworld!\tTab");
+         /*System.out.println("Hello \nworld!\tTab");
         System.out.println("Hello \nworld!\tTab \"SEREF\" ");
 
-        int sayi1 = 2, sayi2 = 10 ,toplam = 0;
-
+       int sayi1 = 2, sayi2 = 10 ,toplam = 0;
         toplam = sayi1 + sayi2;
         System.out.println(sayi1 + " ile " + sayi2+" nin Toplamı : " + toplam);
-
         byte vByte = 127;
         System.out.println(vByte);
-
+   */
         //Kullanıcıdan veri alma
         Scanner input = new Scanner(System.in);
         /*System.out.print("Bir rakam giriniz :");
@@ -66,7 +64,7 @@ public class Main {
          */
         /*Vücut Kitle İndeksi Hesaplama*/
 
-        double boy,kilo,kitleIndex;
+        /*double boy,kilo,kitleIndex;
         System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz :");
         boy      = input.nextDouble();
         System.out.print("Lütfen kilonuzu giriniz :");
@@ -75,5 +73,24 @@ public class Main {
         kitleIndex = kilo / (boy * boy);
 
         System.out.print("Vücut Kitle İndeksiniz:" + kitleIndex);
+
+         */
+        /*Manav Kasa Programı*/
+
+        double armut=2.14,elma=3.67,domates = 1.11,muz=0.95,patlican=5,toplamTutar=0;
+        double armutKilo=0,elmaKilo=0,domatesKilo=0,muzKilo=0,patlicanKilo=0;
+        System.out.print("Armut kaç kilo ?");
+        armutKilo      = input.nextDouble();
+        System.out.print("Elma kaç kilo ?");
+        elmaKilo       = input.nextDouble();
+        System.out.print("Domates kaç kilo ?");
+        domatesKilo       = input.nextDouble();
+        System.out.print("Muz kaç kilo ?");
+        muzKilo       = input.nextDouble();
+        System.out.print("Patlıcan kaç kilo ?");
+        patlicanKilo       = input.nextDouble();
+        toplamTutar = (armut * armutKilo) + (elma * elmaKilo) + (domates * domatesKilo) + (muz * muzKilo) + (patlican * patlicanKilo);
+        System.out.print("Toplam ödenmesi gereken tutar : " + toplamTutar + " TL");
+
     }
 }

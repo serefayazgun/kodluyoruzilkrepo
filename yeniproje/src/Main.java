@@ -1,5 +1,7 @@
 //Kullanıcıdan veri almak için Scanner kütüphanesi kullanılır.
+
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
          /*System.out.println("Hello \nworld!\tTab");
@@ -77,20 +79,53 @@ public class Main {
          */
         /*Manav Kasa Programı*/
 
-        double armut=2.14,elma=3.67,domates = 1.11,muz=0.95,patlican=5,toplamTutar=0;
-        double armutKilo=0,elmaKilo=0,domatesKilo=0,muzKilo=0,patlicanKilo=0;
+       /* double armut = 2.14, elma = 3.67, domates = 1.11, muz = 0.95, patlican = 5, toplamTutar = 0;
+        double armutKilo = 0, elmaKilo = 0, domatesKilo = 0, muzKilo = 0, patlicanKilo = 0;
+
         System.out.print("Armut kaç kilo ?");
-        armutKilo      = input.nextDouble();
+        armutKilo = input.nextDouble();
         System.out.print("Elma kaç kilo ?");
-        elmaKilo       = input.nextDouble();
+        elmaKilo = input.nextDouble();
         System.out.print("Domates kaç kilo ?");
-        domatesKilo       = input.nextDouble();
+        domatesKilo = input.nextDouble();
         System.out.print("Muz kaç kilo ?");
-        muzKilo       = input.nextDouble();
+        muzKilo = input.nextDouble();
         System.out.print("Patlıcan kaç kilo ?");
-        patlicanKilo       = input.nextDouble();
+        patlicanKilo = input.nextDouble();
         toplamTutar = (armut * armutKilo) + (elma * elmaKilo) + (domates * domatesKilo) + (muz * muzKilo) + (patlican * patlicanKilo);
         System.out.print("Toplam ödenmesi gereken tutar : " + toplamTutar + " TL");
+        */
+        /*HESAP MAKİNASI*/
 
+        int sayi1,sayi2,sonuc,islemTuru;
+
+
+        System.out.print("1. Sayısı giriniz : ");
+        sayi1 = input.nextInt();
+        System.out.print("2. Sayısı giriniz : ");
+        sayi2 = input.nextInt();
+
+        System.out.println("1-Toplam\n2-Çıkartma\n3-Çarpma\n4-Bölme ");
+        islemTuru = input.nextInt();
+
+        switch (islemTuru){
+            case 1:
+                sonuc = sayi1 + sayi2;
+                break;
+            case 2:
+                sonuc = sayi1 - sayi2;
+                break;
+            case 3:
+                sonuc = sayi1 * sayi2;
+                break;
+            case 4:
+                sonuc = sayi1 / sayi2;
+                break;
+            default:
+                sonuc = sayi1 + sayi2;
+                break;
+        }
+
+        System.out.print("İşlem sonucu : " + sonuc);
     }
 }

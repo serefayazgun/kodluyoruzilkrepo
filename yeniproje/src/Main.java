@@ -55,7 +55,7 @@ public class Main {
         */
         /*TAKSİ METRE HESAPLAMA*/
 
-        double taksiMetreAcilis = 10,km,kmTutar = 2.2,taksiMetreTutar,altLimit = 20;
+        /*double taksiMetreAcilis = 10,km,kmTutar = 2.2,taksiMetreTutar,altLimit = 20;
         System.out.print("Gideceğiniz mesafeyi KM cinsinden giriniz :");
         km      = input.nextDouble();
         kmTutar *= km;
@@ -63,5 +63,17 @@ public class Main {
         kmTutar = kmTutar < altLimit ? altLimit : kmTutar;
         System.out.println("Ödeyeceğiniz Tutar :" + kmTutar);
 
+         */
+        /*Vücut Kitle İndeksi Hesaplama*/
+
+        double boy,kilo,kitleIndex;
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz :");
+        boy      = input.nextDouble();
+        System.out.print("Lütfen kilonuzu giriniz :");
+        kilo      = input.nextDouble();
+
+        kitleIndex = kilo / (boy * boy);
+
+        System.out.print("Vücut Kitle İndeksiniz:" + kitleIndex);
     }
 }
